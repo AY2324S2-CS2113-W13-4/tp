@@ -71,7 +71,7 @@ public class BookStorage {
         Book currentBook = listOfBooks.get(bookIndex);
         String bookTitle = currentBook.getName();
         String bookBorrowStatus = currentBook.getBorrowedStatus().equals(", borrowed") ? "True" : "False";
-        fileWriter.write(bookTitle + " | " + bookBorrowStatus);
+        fileWriter.write(bookTitle + " | " + bookBorrowStatus + "\n");
     }
 
     private static void addToArrayList(String currentTextLine, int bookCount, ArrayList<Book> listOfBooks) {
